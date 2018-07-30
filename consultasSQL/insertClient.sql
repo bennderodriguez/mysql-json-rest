@@ -1,0 +1,1 @@
+INSERT INTO client (id, First_Name, Last_Name, Title, Departament, Account_Name, Email_Address, Fax, Phone, Address_Street, Address_City, State, Postal_Code, Country) VALUES (NULL, 'Flavio', 'Davila', 'Develop Senior', 'Ti', 'Desarrollador de Software FOS', 'mail@mail.com', '12345', '52369896', 'Maricopa', 'CDMX', 'CDMX', '167895', 'MEX');
