@@ -1,6 +1,8 @@
 <?php
 
 function genjson($table, $selected) {
+    $mysql_json = "";
+    
     if (isset($selected)) {
         $selected = $selected;
     } else {
@@ -14,7 +16,6 @@ function genjson($table, $selected) {
 
 // Creamos el array postres
     $rows['client'] = array();
-
 // Recorremos los registros de la Base de Datos para mostrarlos
     while ($r = $results->fetch_object()) {
         array_push($rows['client'], $r);
@@ -24,7 +25,7 @@ function genjson($table, $selected) {
     $mysql_json = json_encode($rows, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 
 // Con las etiquetas <pre></pre> damos saltos de linea a nuestro array
-    echo $mysql_json;
+    return $mysql_json;
 }
 
-genjson("client", "*");
+echo $la = genjson("client", "*");
